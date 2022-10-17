@@ -1,11 +1,11 @@
-package main
+package src
 
 type ISort interface {
 	Sort(array []int) []int
 }
 
 type BubbleSort struct{}
-// compare one and last , exchange bigger to first 
+// compare one and last , change bigger to first 
 func (b *BubbleSort) Sort(array []int) []int {
 	arrayLen := len(array)
 	for i := 0; i < arrayLen; i++ {
@@ -46,7 +46,7 @@ type InsertSort struct{}
 func (i *InsertSort) Sort(array []int) []int {
 	arrayLen:=len(array)
 	for i:=0;i<arrayLen;i++{
-		
-	}
+		break
+		}
 	return []int
 }

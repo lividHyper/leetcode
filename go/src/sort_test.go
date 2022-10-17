@@ -1,4 +1,4 @@
-package test
+package main
 
 import (
 	"math/rand"
@@ -25,7 +25,7 @@ func TestBubbleSort(t *testing.T) {
 
 func TestSelectSort(t *testing.T) {
 	CreateTestWithHundered(t, new(src.SelectSort))
-	assert.True(t, false)
+	assert.True(t)
 }
 
 func CreateTestWithHundered(t *testing.T, iSort src.ISort) {
